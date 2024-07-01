@@ -17,13 +17,13 @@ interface Message{
   message : string;
 }
   
-export const schema: ZodType<Message> = z
+const schema: ZodType<Message> = z
 .object({
   email: z.string().min(1, "email is required").regex(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/, "invalid email format"),
   message: z.string().min(1, "message is required"),
 })
 
-const Contact = () => {
+export default function Contact() {
   const [assistState, setAssistSatate] = React.useState<boolean>(false);
   const titleName = React.useRef<HTMLHeadingElement>(null);
   const router = useRouter()
@@ -206,5 +206,3 @@ const Contact = () => {
     </div>
   );
 };
-
-export default Contact;
