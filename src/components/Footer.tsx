@@ -49,7 +49,7 @@ const Footer = () => {
         </Link>
           </div>
           <p className="py-2 md:w-[60%] w-[100%]">
-            Welcome to KM Solar Energy Ltd. your certified provider for
+            Welcome to KM Solar Energy. your certified provider for
             sustainable energy solutions.
           </p>
           <div className="flex flex-wrap md:max-w-[80%] w-[100%] justify-start items-start md:space-y-1 space-y-2">
