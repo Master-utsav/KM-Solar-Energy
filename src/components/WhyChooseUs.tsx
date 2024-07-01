@@ -39,7 +39,7 @@ const WhyChooseUs = () => {
     };
   }, [inView]);
   return (
-    <section ref={section4} className="w-[100%] md:h-[80%] h-[100%]">
+    <section ref={section4} className="w-[100%] md:h-auto h-[100%]">
       <motion.div
         initial={{ opacity: 0, y: 50, scale: 0.9 }}
         animate={
@@ -111,7 +111,7 @@ const WhyChooseUs = () => {
         <motion.div
           whileHover={{scale : 1.05}}
           transition={{duration: 0.8 , ease : [0.34, 1.56, 0.64, 1]}}
-          className="md:w-[40%] w-[80%] h-[80%] md:h-[100%] bg-cover bg-center bg-no-repeat transform rounded-xl z-10 opacity-100 inset-1 border-2 border-yellow-400"
+          className="md:w-[40%] w-[80%] h-[80%] md:h-[80vh] bg-cover bg-center bg-no-repeat transform rounded-xl z-10 opacity-100 inset-1 border-2 border-yellow-400"
           style={{ backgroundImage: "url(/images/img_wcu.jpg)" }}
         ></motion.div>
       </motion.div>

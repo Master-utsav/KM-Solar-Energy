@@ -52,7 +52,7 @@ const Header = () => {
   return (
     <section
       ref={section1}
-      className="w-[100vw] md:h-[100vh] h-[90vh] relative overflow-hidden z-10"
+      className="w-[100vw] md:h-auto h-[90vh] relative overflow-hidden z-10"
     >
       <motion.div
         initial={{ opacity: 0, y: 600, scale: 0.9 }}
@@ -62,7 +62,7 @@ const Header = () => {
             : { opacity: 0, y: 500, scale: 0.9 }
         }
         transition={{ duration: 1, ease: [0.34, 1.56, 0.64, 1] }}
-        className="w-[90%] md:h-full h-[90%] bg-cover bg-center bg-no-repeat transform mx-auto justify-center items-center md:px-10 md:pt-24 md:space-y-5
+        className="w-[90%] md:h-full h-[90%] bg-cover bg-center bg-no-repeat transform mx-auto justify-center items-center md:px-10 md:py-20 md:space-y-5
         px-2 pt-5 space-2 rounded-xl"
         style={{ backgroundImage: "url(/images/img_header_1.jpg)" }}
       >-
@@ -70,7 +70,7 @@ const Header = () => {
           ref={title}
           className="md:text-7xl text-3xl text-white/85 font-bold bg-clip-text bg-text-gradient md:w-[70%] w-[100%] py-2 font-sarif"
         >
-          Premier Solar Energy Solutions by <span className="text-white block text-4xl">KM Solar Energy</span>
+          Premier Solar Energy Solutions by <span className="text-white block md:text-6xl text-3xl">KM Solar Energy</span>
         </h1>
         <p ref={para} className="text-white md:w-[50%] w-[90%] text-lg sm:line-clamp-none line-clamp-[13]">
          {" At KM Solar Energy, we are committed to transforming homes and businesses with our premier solar panel solutions. As an award-winning company, we specialize in delivering customized solar energy systems that cater to the unique needs of our clients, ensuring maximum efficiency and significant cost savings. Our team of experts offers comprehensive services, including consultation, design, installation, and ongoing maintenance, to guarantee seamless integration and optimal performance."}

@@ -47,7 +47,7 @@ const SubHeader = () => {
   }, [inView]);
 
   return (
-    <section ref={section2} className="w-[80%] h-[100%] md:h-[50%] md:my-20 mx-auto flex flex-col md:flex-row relative">
+    <section ref={section2} className="w-[80%] h-[100%] md:h-[60%] md:my-20 mx-auto flex flex-col md:flex-row relative">
   <div className="w-full md:w-[50%] h-[40%] md:h-[100%] bg-cover bg-center bg-no-repeat rounded-xl z-10 opacity-80 md:order-2">
     <motion.div
       initial={{ opacity: 0, x: 500, scale: 0.9 }}
@@ -57,7 +57,7 @@ const SubHeader = () => {
       className="w-full h-[100%] rounded-xl md:w-[90%] md:h-full bg-cover bg-center bg-no-repeat z-10 opacity-80 md:order-2"
     ></motion.div>
   </div>
-  <div className="w-full md:w-[100%] md:h-full h-auto flex flex-col md:justify-between  md:py-0 py-2  justify-start items-start md:order-1 md:space-y-3 space-y-1">
+  <div className="w-full md:w-[100%] md:h-full h-auto flex flex-col md:justify-evenly  md:py-0 py-2  justify-start items-start md:order-1 md:space-y-3 space-y-1">
   <motion.h1
       initial={{ opacity: 0, y: -50 }}
       animate={inView? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
