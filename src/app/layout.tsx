@@ -12,10 +12,11 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({children,}: Readonly<{children: React.ReactNode}>) {
+
   return (
     <html lang="en">
        <Head>
-          <meta name="google-adsense-account" content={process.env.NEXT_PUBLIC_ADKEY} />
+          <meta name="google-adsense-account" content={process.env.NEXT_PRIVATE_ADKEY} />
       </Head>
       <body className={inter.className}>
         {children}
