@@ -19,7 +19,6 @@ const Header = () => {
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
   const email:string = process.env.NEXT_PUBLIC_GMAIL!;
-  console.log(process.env.GMAIL!)
   const subject = "Inquiry about services"; 
   const body = "Hello, I'm interested in your services."; 
 
