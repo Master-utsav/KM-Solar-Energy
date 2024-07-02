@@ -25,7 +25,7 @@ const Footer = () => {
   const gmailLink = `mailto:${email}?subject=${encodedSubject}&body=${encodedBody}`;
 
   return (
-    <footer className="flex flex-col w-[100%] md:h-[50%] h-auto mt-20 ">
+    <footer className="flex flex-col w-[100%] md:h-auto h-auto mt-20 ">
       <div className="flex md:flex-row flex-col w-[100%] md:h-[80%] h-auto bg-black text-white justify-center md:justify-evenly items-start md:py-10 md:pl-24 py-4 px-4">
         <div className="flex flex-col justify-start items-start  md:w-[30%] w-[100%] md:text-start text-center">
           <div className="flex text-3xl font-bold text-start justify-center items-start">
@@ -161,7 +161,7 @@ const Footer = () => {
           href={"https://www.linkedin.com/in/master-utsav"}
           className="text-start hover:text-yellow-400 flex gap-2"
           >
-          <p className="">Developer:{" "}</p>
+          <p className="">Website by :{" "}</p>
             master_utsav
           </Link>
       </div>
