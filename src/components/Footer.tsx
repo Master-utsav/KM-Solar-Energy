@@ -157,7 +157,7 @@ const Footer = () => {
             <p className="text-center">Powered by KM Solar</p>
           </Link>
           <Link
-          href={"https://www.linkedin.com/in/master-utsav"}
+          href={"https://masterutsav.in"}
           className="text-start hover:text-yellow-400 flex gap-2"
           >
           <p className="">Website by :{" "}</p>
